@@ -23,7 +23,7 @@ button.on("click", function() {
 	var inputState = d3.select("#state");
 	var inputStateValue = inputState.property("value");
 	if (inputStateValue != "") {
-		filteredData = filteredData.filter(dataset => dataset.state.string[0].toUpperCase() === inputStateValuestring[0].toUpperCase());
+		filteredData = filteredData.filter(dataset => dataset.state === inputStateValue);
 	}
 	
 	tbody.html("")
