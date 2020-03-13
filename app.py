@@ -10,21 +10,6 @@ def index():
     # We hardcode some information to be returned
     return render_template('index.html')
 
-@app.route('/obesity')
-def index():
-    # We hardcode some information to be returned
-    return render_template('obesity.html')
-
-@app.route('/tobacco')
-def index():
-    # We hardcode some information to be returned
-    return render_template('tobacco.html')
-
-@app.route('/income')
-def index():
-    # We hardcode some information to be returned
-    return render_template('income.html')
-
 # Get setup so that if we call the app directly (and it isn't being imported elsewhere)
 # it will then run the app with the debug mode as True
 # More info - https://docs.python.org/3/library/__main__.html

@@ -1,42 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Causes of Death</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="templates/Css/style.css">
-     
-      </head>
+<head>
+  <meta charset="utf-8">
+  <title>Cause of Death Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
 
 <body>
- <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-                    
-        <h1> Causes of Death in USA 2011- 2016</h1> <br>
-        <p> The purpose of this project was to examine the leading causes of death across the United States.</p>
-        <P>We wanted to determine what states are at a higher risk based on our variables of exploration:</p>
-            <ul> Obesity </ul>
-            <ul> Tobacco use</ul>
-            <ul> Per Capita Income</ul>
-        <p>We wanted to see whether there was a correlation between death and the behavioral/ financial factors.  </p>
-        <div class="row">
-            <div class="col-md-4">
-              <div class="well">
-                <h5>Select the State:</h5>
-                <select id="selState" onchange="optionChanged(this.value)"></select>
-              </div>
-  
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a> -->
+        </div>
       </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src = "app.js"></script>
-  <script src = "app.py"></script>
+    </nav>
+    <div class="hero text-center">
+      <h1>Causes of Death Analysis</h1>
+      <p>Choose a state and year to interact with the chart below and explore the dataset.</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="year">Enter a Year</label>
+                        <input class="form-control" id="year" type="text" placeholder="2011">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a State (Fully Typed Out)</label>
+                        <input class="form-control" id="state" type="text" placeholder="Alabama">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Data</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">ID</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Year</th>
+                  <th class="table-head">Obesity Percentage</th>
+                  <th class="table-head">Tobacco Percentage</th>
+                  <th class="table-head">Per Capita Income</th>
+                  <th class="table-head"># Of Deaths</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">Causes of Death Analysis</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
 </body>
+
 </html>
