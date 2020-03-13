@@ -2,7 +2,7 @@ import csv
 import json
  
 file = 'output/analysis.csv'
-json_file = 'merged_results.json'
+json_file = 'data/merged_results.json'
  
 #Read CSV File
 def read_CSV(file, json_file):
