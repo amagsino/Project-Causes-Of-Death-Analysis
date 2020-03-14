@@ -24,5 +24,29 @@ Number of deaths nationally increase every year
 
 With More time: We considered adding dropdowns that enable the user to select and filter out the graphs as well as another js library. 
 
-(See Website for Dashboard/Visualizations)
+# Sources:
+
+Leading Causes of Death:
+https://www.cdc.gov/nchs/data-visualization/mortality-leading-causes/index_2.htm
+
+Factors
+Tobacco Use: https://www.americashealthrankings.org/explore/annual/measure/Smoking/
+Alcohol: https://pubs.niaaa.nih.gov/publications/surveillance110/tab4-1_16.htm
+Obesity: https://chronicdata.cdc.gov/Nutrition-Physical-Activity-and-Obesity/Nutrition-Physical-Activity-and-Obesity-Behavioral/hn4x-zwk7/data
+Personal Income by state: https://apps.bea.gov/itable/iTable.cfm?ReqID=70&step=1
+
+Notes:
+Mortality and causal links to behavioral factors: https://www.cdc.gov/mmwr/preview/mmwrhtml/su6304a2.htm#tab3
+
+Alcohol consumption (national, state, regional):
+https://pubs.niaaa.nih.gov/publications/surveillance110/CONS16.htm#top
+https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/alcohol-facts-and-statistics#:~:text=
+
+Age Adjusted Death Rate:
+https://www.health.ny.gov/diseases/chronic/ageadj.htm
+https://health.mo.gov/data/mica/CDP_MICA/AARate.html
+
+
+
+##(See Website for Dashboard/Visualizations & PowerPoint for more information)
 
