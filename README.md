@@ -48,5 +48,5 @@ https://health.mo.gov/data/mica/CDP_MICA/AARate.html
 
 
 
-##(See Website for Dashboard/Visualizations & PowerPoint for more information)
+## (See Website for Dashboard/Visualizations & PowerPoint for more information)
 
