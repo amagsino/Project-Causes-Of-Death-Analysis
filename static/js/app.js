@@ -10,7 +10,6 @@ tableData.forEach(dataset => {
 	});
 });
 
-
 var button = d3.select("button");
 button.on("click", function() {
 	var filteredData = tableData;
@@ -34,4 +33,16 @@ button.on("click", function() {
 			cell.text(value);
 		});
 	});
+
+	chart.html("")
+	filteredData.forEach(dataset => {
+		var chart = anychart.column();
+        chart.data(dataset);
+        chart.title("Obesity %");
+        chart.container("container");
+        chart.draw();
+      });
+	})
+
+	
 });
