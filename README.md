@@ -24,5 +24,5 @@ Number of deaths nationally increase every year
 
 With More time: We considered adding dropdowns that enable the user to select and filter out the graphs as well as another js library. 
 
-
+(See Website for Dashboard/Visualizations)
 
