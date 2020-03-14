@@ -69,10 +69,17 @@ yText
     .attr("data-name", "tobacco_percentage")
     .attr("data-axis", "y")
     .attr("class", "aText inactive y");
+yText
+    .append("text")
+    .text("Per Capita Income")
+    .attr("y", 26)
+    .attr("data-name", "per_capita_income")
+    .attr("data-axis", "y")
+    .attr("class", "aText inactive y");
 
 d3.csv("clean_datasets/merged_results.csv").then(function (data) {
     var curX = "deaths";
-    var curY = "obesity";
+    var curY = "obesity_percentage";
     var xMin;
     var xMax;
     var yMin;

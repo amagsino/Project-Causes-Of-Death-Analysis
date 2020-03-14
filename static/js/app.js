@@ -34,15 +34,16 @@ button.on("click", function() {
 		});
 	});
 
-	chart.html("")
-	filteredData.forEach(dataset => {
-		var chart = anychart.column();
-        chart.data(dataset);
-        chart.title("Obesity %");
-        chart.container("container");
-        chart.draw();
-      });
-	})
+	// d3.select(#chart)
+	// chart.html("")
+	// filteredData.forEach(dataset => {
+	// 	var chart = anychart.column();
+    //     chart.data(dataset);
+    //     chart.title("Obesity %");
+    //     chart.container("container");
+    //     chart.draw();
+    //   });
+	// })
 
 	
 });
